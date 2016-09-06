@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== "production") {
     module.exports = {
         entry: {
             app: ["./src/app.js"],
-            vendor: ["react", "bluebird","@ali/sui","clipboard"]
+            vendor: ["react", "bluebird"]
         },
         output: {
             filename: "[name].bundle.js",
@@ -62,7 +62,7 @@ if (process.env.NODE_ENV !== "production") {
     module.exports = {
         entry: {
             app: ["./src/app.js"],
-            vendor: ["react", "bluebird", "@ali/sui", "clipboard"]
+            vendor: ["react", "bluebird"]
         },
         output: {
             filename: "[name].bundle.js",
