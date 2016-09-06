@@ -1,0 +1,51 @@
+{
+  "name": "baichuan.pc.feedback",
+  "main": "src/app.js",
+  "scripts": {
+    "prebuild":"export NODE_ENV=production",
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.js",
+    "dev": "./node_modules/.bin/webpack-dev-server --inline --hot --content-base . --output-public-path=build --host 127.0.0.1",
+    "dev-install": "tnpm install && tnpm install --only=dev"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "browser-cookies": "^1.0.8",
+    "classnames": "^2.2.3",
+    "history": "~1.17.0",
+    "moment": "^2.13.0",
+    "postcss-loader": "^0.9.1",
+    "pure-render-decorator": "^1.1.1",
+    "react": "~0.14.3",
+    "react-addons-css-transition-group": "^0.14.8",
+    "react-addons-transition-group": "^15.3.0",
+    "react-color": "^2.2.2",
+    "react-dom": "~0.14.3",
+    "react-quill": "^0.4.1",
+    "react-redux": "~4.0.0",
+    "react-router": "^2.0.0",
+    "react-router-redux": "~4.0.0",
+    "redux": "~3.3.1",
+    "redux-thunk": "^1.0.0",
+    "reqwest": "^1.1.6 "
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "~6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
